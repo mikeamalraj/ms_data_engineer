@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mG:\MoneySmart\tmp\test\src\main\scala\LogProcessor.scala:80:61: not found: value s[0m
+[0m[[0m[31merror[0m] [0m[0m		val productParsedDF = productDF.select(from_json($"value",s).as("data")).select("data.*")[0m
+[0m[[0m[31merror[0m] [0m[0m		                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
