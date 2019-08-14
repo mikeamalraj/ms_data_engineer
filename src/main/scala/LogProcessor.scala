@@ -19,7 +19,7 @@ object LogProcessor {
           .readStream
           .format("kafka")
           .option("kafka.bootstrap.servers", "localhost:9092")
-          .option("subscribe","rawdata")
+          .option("subscribe","LogData")
           .option("startingOffsets","earliest")
           .load()
           .selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)").as[(String, String)]
